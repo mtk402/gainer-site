@@ -1,0 +1,37 @@
+# Vercel Web Analytics Implementation
+
+## Summary
+Successfully implemented Vercel Web Analytics for this static HTML5 website by adding the official analytics script tags to the index.html file.
+
+## Changes Made
+
+### Modified Files
+- **gainer-site/index.html**: Added Vercel Web Analytics script tags in the `<head>` section
+
+### Implementation Details
+Since this is a static HTML5 website without a build process or package.json, I followed the official Vercel documentation for HTML5 projects:
+
+1. **Fetched Latest Documentation**: Retrieved the most up-to-date installation instructions from https://vercel.com/docs/analytics/quickstart
+2. **Added Analytics Scripts**: Inserted two script tags in the `<head>` section:
+   - First script initializes the analytics queue (`window.va`)
+   - Second script loads the tracking script from Vercel's CDN (`/_vercel/insights/script.js`)
+3. **Placement**: Scripts were added right after the Twitter meta tags and before the `<style>` section for optimal loading
+
+## Why This Approach
+- For static HTML sites on Vercel, the `@vercel/analytics` npm package is **not required**
+- Vercel automatically serves the analytics script at `/_vercel/insights/script.js` when Web Analytics is enabled
+- No package installation or build process needed for static HTML projects
+- The script path `/_vercel/insights/script.js` is the standard path used by Vercel for static sites
+
+## Next Steps
+To complete the setup:
+1. Deploy this change to Vercel
+2. Enable Web Analytics in the Vercel project dashboard (Settings → Analytics)
+3. Analytics will start tracking page views automatically once enabled
+4. View analytics data in the Vercel dashboard after deployment
+
+## Notes
+- The implementation follows Vercel's official documentation exactly
+- No dependencies or package managers were needed for this static site
+- The analytics script loads asynchronously (using `defer`) to avoid blocking page rendering
+- Analytics will only be active after deployment to Vercel and enabling the feature in the dashboard
