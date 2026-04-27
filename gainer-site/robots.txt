@@ -4,4 +4,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://REPLACE_WITH_YOUR_PUBLIC_URL/sitemap.xml
+Sitemap: https://gainer-site.vercel.app//sitemap.xml

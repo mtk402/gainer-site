@@ -19,7 +19,7 @@ A single static page for **Gainer** (workout tracker & training intelligence) so
 
 3. Vercel: [New Project](https://vercel.com/new) → import `gainer-site` → **Deploy** (Hobby is free for personal use).
 
-4. When you have a stable URL (e.g. `https://gainer-site.vercel.app` or a custom domain), **replace** every `https://REPLACE_WITH_YOUR_PUBLIC_URL` in:
+4. When you have a stable URL (e.g. `https://gainer-site.vercel.app` or a custom domain), **replace** every `https://gainer-site.vercel.app/` in:
    - `index.html` (`<link rel="canonical">`, `og:url`)
    - `robots.txt` (`Sitemap:` line)
    - `sitemap.xml` (`<loc>`)
