@@ -1,0 +1,7 @@
+# Allow crawlers. Replace the sitemap URL with your real public URL
+# (e.g. https://gainer.yourdomain.com/sitemap.xml or your-project.vercel.app)
+
+User-agent: *
+Allow: /
+
+Sitemap: https://REPLACE_WITH_YOUR_PUBLIC_URL/sitemap.xml
