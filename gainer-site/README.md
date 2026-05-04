@@ -1,25 +1,25 @@
-# Gainer — marketing site (static)
+# Ironside — marketing site (static)
 
-A single static page for **Gainer** (workout tracker & training intelligence) so people can find the app on the web. This folder is **not** the iOS/Next app — deploy it as its own Vercel project.
+A single static page for **Ironside** (workout tracker & training intelligence) so people can find the app on the web. This folder is **not** the iOS/Next app — deploy it as its own Vercel project.
 
 ## Use as its own repository
 
-1. Create a new empty repo on GitHub (e.g. `gainer-site`).
-2. From this machine, in the `gainer-site` directory:
+1. Create a new empty repo on GitHub (e.g. `ironside-site`).
+2. From this machine, in the `ironside-site` directory:
 
    ```bash
-   cd gainer-site
+   cd ironside-site
    git init
    git add index.html robots.txt sitemap.xml README.md
    git commit -m "Initial marketing page"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USER/gainer-site.git
+   git remote add origin https://github.com/YOUR_USER/ironside-site.git
    git push -u origin main
    ```
 
-3. Vercel: [New Project](https://vercel.com/new) → import `gainer-site` → **Deploy** (Hobby is free for personal use).
+3. Vercel: [New Project](https://vercel.com/new) → import `ironside-site` → **Deploy** (Hobby is free for personal use).
 
-4. When you have a stable URL (e.g. `https://gainer-site.vercel.app` or a custom domain), **replace** every `https://gainer-site.vercel.app/` in:
+4. When you have a stable URL (e.g. `https://ironside-site.vercel.app` or a custom domain), **replace** every `https://ironside-site.vercel.app/` in:
    - `index.html` (`<link rel="canonical">`, `og:url`)
    - `robots.txt` (`Sitemap:` line)
    - `sitemap.xml` (`<loc>`)

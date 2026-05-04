@@ -6,7 +6,7 @@ Successfully implemented Vercel Web Analytics for this static HTML5 website by a
 ## Changes Made
 
 ### Modified Files
-- **gainer-site/index.html**: Added Vercel Web Analytics script tags in the `<head>` section
+- **ironside-site/index.html**: Added Vercel Web Analytics script tags in the `<head>` section
 
 ### Implementation Details
 Since this is a static HTML5 website without a build process or package.json, I followed the official Vercel documentation for HTML5 projects:
